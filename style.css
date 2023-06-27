@@ -171,6 +171,7 @@ hr.light-100 {
 .about_header {
   text-align: left;
   margin-left: 7%;
+  margin-right: 7%;
 }
 
 .image_about{
@@ -305,30 +306,28 @@ figure {
 }
 
 
+@media (max-width: 767px) { /* Adjust breakpoint as per your requirements */
 
+  footer {
+    z-index: 999; /* Adjust this value if necessary */
+    bottom: 0;
+  }
 
+  .about_title,.about_text, .ghost_text{
+ text-align: center; /* Centers the text horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
 
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
-
-
-
-
-
-
-
-
+  .image_about {
+     margin-left: 18%;
+  }
+  .index_video {
+    height: 200%;
+    width: 95%;
+  }
+  .col-lg-6 {
+    margin-bottom: 20%;
+  }
+}
